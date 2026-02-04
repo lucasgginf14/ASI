@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: Notebook REST
+# Descomentar para utilizar postgresql en vez de H2
+  datasource:
+    url: jdbc:postgresql://localhost:5432/asi
+    username: asi
+    password: asi
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+properties:
+  clientHost: http://localhost:1234
+  jwtSecretKey: h3qlqtvjaq8NEm1AG$2p8qT!^c3AkrE&rno2z8LZWD@qWo40xphNoPQ7j%J197
+  jwtValidity: 7200

@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: BNBRIA REST
+  datasource:
+    host: localhost
+    port: 5432
+    database: asi
+    username: asi
+    password: asi
+    url: jdbc:postgresql://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.database}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: create   # 'create' para limpiar, 'update' para mantener datos, usar 'none' o 'validate' si no quieres que Spring haga cambios
+properties:
+  clientHost: http://localhost:1234
+  jwtSecretKey: h3qlqtvjaq8NEm1AG$2p8qT!^c3AkrE&rno2z8LZWD@qWo40xphNoPQ7j%J197
+  jwtValidity: 7200
+  # rutaImagenes: C:\\Users\\Public\\Pictures\\BNBRIA\\
+  rutaImagenes: /var/bnbria/pictures/
